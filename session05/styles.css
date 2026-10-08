@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(247, 239, 208);
+    color: rgb(136, 138, 136);
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16px;
+}
+
+h1 {
+    
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color: #805620;
+    font-size: 36px;
+}
+
+
+/* descendant selectors */
+
+/* links in navbar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #46736a;
+    font-size: 16px;
+    
+}
+
+/* links in main section */
+main a {
+    color: rgb(255, 0, 0);
+}
+
+/* ruls for artist name, site name, year */
+
+h2 {
+  font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #46736a;
+    font-size: 16px;
+
+    
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    color: #687052;
+    font-size: 10px;
+}
+
+h3  {
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    color: #687052;
+}
+
+footer {
+    font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color: #46736a;
+    font-size: 10px;
+}
+
+li {
+    font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #805620;
+    font-size: 16px;
+}
+
+td {
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    color: #805620;
+}
