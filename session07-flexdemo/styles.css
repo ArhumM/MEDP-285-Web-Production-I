@@ -1,0 +1,141 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    background-color: #1f2663;
+    background-image: url("https://images.unsplash.com/photo-1616419232319-d1b7b92dca61?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Add padding to all of the .container child elements */
+.container>* {
+    padding: 20px;
+}
+
+/* FLEX PARENT */
+.container {
+    background-color: #56478d;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Zen Dots", sans-serif;
+}
+/* FLEX CHILDREN */
+header {
+    background-color: #26364b;
+    order: 1;
+    flex: 1 0 100%;
+    /* grow on, shrink off, span width of browser */
+    text-align: center;
+    font-family: "Unica One", sans-serif;
+}
+
+main {
+    background-color: #878da7;
+    order: 3;
+    flex: 1 1 500px;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* DISPLAY NAV HIGHER ON PAGE BUT LETTING THE HTML BE LOWER FOR ACCESSIBILITY */
+nav {
+     background-color: #325180;
+    order: 4;
+    flex: 1 0 200px;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav li {
+    list-style: none;
+    
+}
+
+nav li a {
+    display: inline-block;
+    background-color: transparent;
+    color: #131d2b;
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 30px;
+    margin: 5px;
+    border: 2px solid #4a6b96;
+    text-align: center;
+    font-family: "Unica One", sans-serif;
+  
+}
+
+
+nav li a:hover {
+    background-color: #4a6b96;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+nav li a:link,
+nav li a:visited,
+nav li a:hover,
+nav li a:active {
+    text-decoration: none;
+}
+
+aside {
+    background-color: #145869;
+    order: 4;
+    flex: 1 0 200px;
+}
+
+footer {
+    background-color: #3a3f79;
+    order: 5;
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+.thumbnail {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
